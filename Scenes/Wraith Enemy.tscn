@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c1hglc5dhqokd"]
+
+[ext_resource type="Texture2D" uid="uid://bx4070jxranlg" path="res://Assets/Sprites/Wraith Enemy/wraith_0.png" id="1_syj28"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_syj28")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Wraith Enemy" type="Node2D" unique_id=703492420]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1040667368]
+sprite_frames = SubResource("SpriteFrames_0g7hm")

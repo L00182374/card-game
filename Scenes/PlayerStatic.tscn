@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ds5ovdx450j24"]
+
+[ext_resource type="Texture2D" uid="uid://dkisi523f5210" path="res://Assets/Sprites/Player/05 zx 01.png" id="2_0wjyo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0wjyo")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D" unique_id=429498273]
+scale = Vector2(3, 3)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=735766771]
+sprite_frames = SubResource("SpriteFrames_0g7hm")
+animation = &"Idle"
