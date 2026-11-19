@@ -1,5 +1,34 @@
 [gd_scene format=3 uid="uid://bjj75meq0g4je"]
 
-[node name="TestLevel" type="Node" unique_id=2147023076]
+[ext_resource type="PackedScene" uid="uid://n871rnvacwjy" path="res://Scenes/player_spawner.tscn" id="1_wdwl3"]
+[ext_resource type="Texture2D" uid="uid://f3fxybj3yeod" path="res://Assets/Sprites/Level Art/alexei_savrasov_painting_art.jpg" id="3_p23by"]
+[ext_resource type="PackedScene" uid="uid://ds5ovdx450j24" path="res://Scenes/PlayerStatic.tscn" id="4_jiqwm"]
+[ext_resource type="PackedScene" uid="uid://c1hglc5dhqokd" path="res://Scenes/Wraith Enemy.tscn" id="4_p23by"]
 
-[node name="level" type="Node3D" parent="." unique_id=691535945]
+[sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_p23by")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TestLevel" type="Node2D" unique_id=2103445978]
+
+[node name="Player Spawner" parent="." unique_id=1894246352 instance=ExtResource("1_wdwl3")]
+position = Vector2(214, 412)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=941249768]
+z_index = -199
+position = Vector2(565.125, 334.25)
+scale = Vector2(0.8908987, 0.67333984)
+sprite_frames = SubResource("SpriteFrames_0g7hm")
+
+[node name="Wraith Enemy" parent="." unique_id=703492420 instance=ExtResource("4_p23by")]
+position = Vector2(791, 429)
+
+[node name="Player" parent="." unique_id=1414380934 instance=ExtResource("4_jiqwm")]
+position = Vector2(398, 524)
