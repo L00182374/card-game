@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bjj75meq0g4je"]
 
 [ext_resource type="PackedScene" uid="uid://n871rnvacwjy" path="res://Scenes/player_spawner.tscn" id="1_wdwl3"]
+[ext_resource type="PackedScene" uid="uid://btp0fqheyrk30" path="res://Scenes/enemy_spawner.tscn" id="3_7u35h"]
 [ext_resource type="Texture2D" uid="uid://f3fxybj3yeod" path="res://Assets/Sprites/Level Art/alexei_savrasov_painting_art.jpg" id="3_p23by"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
@@ -21,6 +22,9 @@ position = Vector2(399, 522)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=941249768]
 z_index = -199
-position = Vector2(565.125, 334.25)
+position = Vector2(594, 345)
 scale = Vector2(0.8908987, 0.67333984)
 sprite_frames = SubResource("SpriteFrames_0g7hm")
+
+[node name="EnemySpawner" parent="." unique_id=1758696444 instance=ExtResource("3_7u35h")]
+position = Vector2(872, 186)
