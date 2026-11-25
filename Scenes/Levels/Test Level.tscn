@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://n871rnvacwjy" path="res://Scenes/player_spawner.tscn" id="1_wdwl3"]
 [ext_resource type="PackedScene" uid="uid://btp0fqheyrk30" path="res://Scenes/enemy_spawner.tscn" id="3_7u35h"]
 [ext_resource type="Texture2D" uid="uid://f3fxybj3yeod" path="res://Assets/Sprites/Level Art/alexei_savrasov_painting_art.jpg" id="3_p23by"]
-[ext_resource type="PackedScene" uid="uid://cvvrs83csnao3" path="res://Scenes/Cards/CardAreaMiddle.tscn" id="4_p23by"]
+[ext_resource type="PackedScene" uid="uid://cvvrs83csnao3" path="res://Scenes/Cards/CardSpawner.tscn" id="4_p23by"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
 animations = [{
