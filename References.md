@@ -1,8 +1,13 @@
 # References:
 
-## Art
+<details>
+
+<summary>Art</summary>
+
   * Character: https://opengameart.org/content/guy-in-coat-animated-set
   * Card Art: https://opengameart.org/content/card-template
+
+</details>
 
 ## Music/Sound
   * Battle Music: 
