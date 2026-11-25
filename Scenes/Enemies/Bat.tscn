@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dbd06ohblissq"]
+
+[ext_resource type="Texture2D" uid="uid://cw433hc1nw01q" path="res://Assets/Sprites/Bat Enemy/32x32-bat-sprite.png" id="1_xfaav"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_psbkr"]
+atlas = ExtResource("1_xfaav")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u58sa"]
+atlas = ExtResource("1_xfaav")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bhup"]
+atlas = ExtResource("1_xfaav")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_psbkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u58sa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bhup")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 12.0
+}]
+
+[node name="Bat" type="Node2D" unique_id=673717788]
+scale = Vector2(3, 3)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1727936280]
+sprite_frames = SubResource("SpriteFrames_0g7hm")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.5882611

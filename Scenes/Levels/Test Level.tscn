@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://n871rnvacwjy" path="res://Scenes/player_spawner.tscn" id="1_wdwl3"]
 [ext_resource type="PackedScene" uid="uid://btp0fqheyrk30" path="res://Scenes/enemy_spawner.tscn" id="3_7u35h"]
 [ext_resource type="Texture2D" uid="uid://f3fxybj3yeod" path="res://Assets/Sprites/Level Art/alexei_savrasov_painting_art.jpg" id="3_p23by"]
+[ext_resource type="PackedScene" uid="uid://cvvrs83csnao3" path="res://Scenes/Cards/CardAreaMiddle.tscn" id="4_p23by"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
 animations = [{
@@ -18,13 +19,22 @@ animations = [{
 [node name="TestLevel" type="Node2D" unique_id=2103445978]
 
 [node name="Player Spawner" parent="." unique_id=1894246352 instance=ExtResource("1_wdwl3")]
-position = Vector2(399, 522)
+position = Vector2(114, 484)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=941249768]
+[node name="LevelBackground" type="AnimatedSprite2D" parent="." unique_id=941249768]
 z_index = -199
-position = Vector2(594, 345)
+position = Vector2(581.99994, 343)
 scale = Vector2(0.8908987, 0.67333984)
 sprite_frames = SubResource("SpriteFrames_0g7hm")
 
 [node name="EnemySpawner" parent="." unique_id=1758696444 instance=ExtResource("3_7u35h")]
 position = Vector2(872, 186)
+
+[node name="EnemySpawner2" parent="." unique_id=95227234 instance=ExtResource("3_7u35h")]
+position = Vector2(706, 227)
+
+[node name="EnemySpawner3" parent="." unique_id=773012922 instance=ExtResource("3_7u35h")]
+position = Vector2(1042, 265)
+
+[node name="CardAreaMiddle" parent="." unique_id=1743915299 instance=ExtResource("4_p23by")]
+position = Vector2(575, 551)

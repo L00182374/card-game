@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://0rostn7p0hhi"]
 
 [ext_resource type="Texture2D" uid="uid://buvxdos7y6d5y" path="res://Assets/Sprites/Cards/Card Template 2.png" id="1_iq2tp"]
+[ext_resource type="Script" uid="uid://orel02xnn8uj" path="res://Scripts/CardScripts/attack_card.gd" id="1_nkpat"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0g7hm"]
 animations = [{
@@ -19,15 +20,19 @@ animations = [{
 }]
 
 [node name="AttackCard" type="Node2D" unique_id=293586803]
+script = ExtResource("1_nkpat")
+
+[node name="PictureMiddle" type="Node2D" parent="." unique_id=1761153761]
+position = Vector2(0, -29)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=214877512]
 sprite_frames = SubResource("SpriteFrames_0g7hm")
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=1910809814]
 offset_left = -34.0
-offset_top = -53.0
+offset_top = 18.0
 offset_right = 34.0
-offset_bottom = -5.0
+offset_bottom = 56.0
 theme_override_font_sizes/font_size = 12
 text = "Test Card"
 editable = false
